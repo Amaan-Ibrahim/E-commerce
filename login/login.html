@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+<body>
+    <nav>
+        <div class="maindiv">
+            <div class="leftside">
+                <h2 class="form-field animation a1"><b>WELCOME to shopizea</b></h2>
+                <h1 class="form-field animation a2">WE MAKE YOUR LIFE EASY</h1>
+                <h4 class="form-field animation a3">MAKING YOUR LIKE ESAY WITH THE BEST</h4>
+            </div>
+            <div class="rightside">
+                <h1 class="form-field animation a4">Sign In</h1>
+                <div>
+                    <input type="email"  class="form-field animation a5" placeholder="Username" id="Username"  > <hr  class="form-field animation a6" />
+                    <p class="para1" id="para1" style="color:red; display: none; text-transform: capitalize;">fill your password</p>
+                </div>  
+                
+                <div >
+                    <input type="password"  class="form-field animation a7" placeholder="Password" id="Password"><hr  class="form-field animation a8" />
+                    <p id="para2" style="color:red; display: none; text-transform: capitalize;">fill your password</p>
+
+                </div>
+                <a href="#" class="a rightside1 form-field animation a9">Forgethen Password?</a>
+                <div>
+                  <button class="btn a form-field animation a10" onclick="login()">Log In</button>
+                  <!-- <input type="submit" class="btn a form-field animation a10" onclick="login()"Log In /> -->
+                </div>
+                <a href="../website/web.html" class="a form-field animation a11">Not yet Registered!</a>
+               <!-- <h1>amaan</h1> -->
+            </div>
+        </div>
+    </nav>
+</body>
+<script>
+    function login(){
+        var user = document.getElementById("Username").value
+        var pwd = document.getElementById("Password").value
+
+            if(user && pwd){
+                window.location.href="../index/index.html"
+            }
+        if(user == ''){
+            // alert("amaan")
+            document.getElementById("para1").style.display="inline";
+
+        }
+        
+        else if(pwd == ''){
+            // alert("amaan")
+            document.getElementById("para2").style.display="inline";}
+        else if(user == 'siddiqueraheel216@gmail.com' && pwd == 'rasim123'){
+//   window.location.href="wrong password";
+// location.replace("C:\Users\Leenovo n\Desktop\shehzad\project 1\Electronics\website\web.html")
+     
+    }
+}
+    </script>
+</html>
